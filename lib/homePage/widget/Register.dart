@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:playpoint/registerPage/registerPage.dart';
 
 class Register extends StatelessWidget {
-  Register({
+  const Register({
     Key? key,
   }) : super(key: key);
 
@@ -12,7 +12,7 @@ class Register extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 20),
-      child: FlatButton(
+      child: MaterialButton(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(36)),
         color: Colors.white,
         onPressed: () => showModalBottomSheet(
@@ -20,7 +20,7 @@ class Register extends StatelessWidget {
             shape: const RoundedRectangleBorder(
                 borderRadius: BorderRadius.vertical(top: Radius.circular(30))),
             context: context,
-            builder: (context) => registerPage()),
+            builder: (context) => const registerPage()),
         child: Container(
           padding: const EdgeInsets.symmetric(vertical: 16),
           alignment: Alignment.center,

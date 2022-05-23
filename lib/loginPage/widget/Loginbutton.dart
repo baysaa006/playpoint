@@ -11,7 +11,7 @@ class Loginbutton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 50),
-      child: FlatButton(
+      child: MaterialButton(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
         color: mMainColor,
         onPressed: () {

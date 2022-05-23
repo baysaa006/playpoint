@@ -11,20 +11,25 @@ class registerPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 50),
-      child: ListView(children: [
-        const SizedBox(
-          height: 100,
-        ),
-        Center(
-          child: registerBody(),
-        ),
-        const SizedBox(
-          height: 15,
-        ),
-        const Center(
-          child: nextButton(),
-        )
-      ]),
+      child: Scaffold(
+        body: ListView(
+            shrinkWrap: true,
+            reverse: true,
+            children: [
+              const SizedBox(
+                height: 100,
+              ),
+              Center(
+                child: registerBody(),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              const Center(
+                child: nextButton(),
+              )
+            ].reversed.toList()),
+      ),
     );
   }
 }

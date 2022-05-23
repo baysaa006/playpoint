@@ -16,7 +16,7 @@ class Login extends StatelessWidget {
       child: Row(
         children: <Widget>[
           Expanded(
-            child: FlatButton(
+            child: MaterialButton(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(36)),
               color: mMainColor,

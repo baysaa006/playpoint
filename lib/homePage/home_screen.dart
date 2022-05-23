@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
             height: 100,
           ),
           const Login(),
-          Register(),
+          const Register(),
         ],
       )),
     );

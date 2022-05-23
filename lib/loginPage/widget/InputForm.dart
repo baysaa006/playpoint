@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:playpoint/loginPage/widget/InputTextField.dart';
-import 'package:playpoint/registerPage/registerPage.dart';
 
 class InputForm extends StatelessWidget {
   const InputForm({
@@ -21,10 +20,6 @@ class InputForm extends StatelessWidget {
               Icons.person_outline_sharp,
               color: Colors.white,
             ),
-            nuuts: const Icon(
-              Icons.access_alarm,
-              color: Colors.black,
-            ),
           ),
           InputTextField(
             label: 'Нууц үг',
@@ -32,10 +27,6 @@ class InputForm extends StatelessWidget {
             password: true,
             icon: const Icon(
               Icons.key,
-              color: Colors.white,
-            ),
-            nuuts: const Icon(
-              Icons.question_mark_outlined,
               color: Colors.white,
             ),
           ),

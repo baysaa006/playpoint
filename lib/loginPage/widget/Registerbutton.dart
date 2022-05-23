@@ -1,6 +1,5 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:playpoint/registerPage/OTPPage.dart';
 import 'package:playpoint/registerPage/registerPage.dart';
 
 Container Registerbutton(BuildContext context) {
@@ -26,7 +25,7 @@ Container Registerbutton(BuildContext context) {
                       borderRadius:
                           BorderRadius.vertical(top: Radius.circular(30))),
                   context: context,
-                  builder: (context) => registerPage()),
+                  builder: (context) => const registerPage()),
           )
         ]),
       ),

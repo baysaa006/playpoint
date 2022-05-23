@@ -9,10 +9,11 @@ class nextButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FlatButton(
+    return MaterialButton(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
       color: mbuttonColor,
       onPressed: () => showModalBottomSheet(
+          isScrollControlled: true,
           shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.vertical(top: Radius.circular(30))),
           context: context,

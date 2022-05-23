@@ -3,6 +3,7 @@ import 'package:playpoint/constant.dart';
 import 'package:playpoint/loginPage/widget/InputForm.dart';
 import 'package:playpoint/loginPage/widget/Loginbutton.dart';
 import 'package:playpoint/loginPage/widget/Registerbutton.dart';
+import 'package:playpoint/loginPage/widget/SecretButton.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -20,8 +21,9 @@ class LoginScreen extends StatelessWidget {
             height: 230,
           ),
           const InputForm(),
+          const secretButton(),
           const SizedBox(
-            height: 80,
+            height: 60,
           ),
           const Loginbutton(),
           const SizedBox(
