@@ -37,6 +37,8 @@ dependencies:
   flutter_svg: ^1.0.3
   animated_splash_screen: ^1.2.0
   flutter_spinkit: ^5.1.0
+  barcode_widget: ^1.5.0
+  flutter_barcode_scanner: ^2.0.0
 
 dev_dependencies:
   flutter_test:
@@ -48,7 +50,9 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
-  flutter_launcher_icons: "^0.9.2"
+  flutter_launcher_icons: ^0.9.2
+
+  
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -64,6 +68,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/screen.png
+    - assets/images/Group 680.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
