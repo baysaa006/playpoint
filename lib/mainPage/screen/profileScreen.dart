@@ -12,9 +12,15 @@ class profielScreen extends StatefulWidget {
 class _profielScreenState extends State<profielScreen> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
       child: Scaffold(
-        body: Column(children: []),
+        body: Column(children: [
+          CircleAvatar(
+            radius: 50,
+            backgroundImage: AssetImage("assets/images/no-profile.png"),
+          )
+        ]),
       ),
     );
   }
