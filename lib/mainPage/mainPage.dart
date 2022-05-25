@@ -5,6 +5,7 @@ import 'package:playpoint/constant.dart';
 import 'package:playpoint/mainPage/screen/mainScreen.dart';
 import 'package:playpoint/mainPage/screen/profileScreen.dart';
 import 'package:playpoint/mainPage/screen/qrScannerScreen.dart';
+import 'package:playpoint/mainPage/screen/screen.dart';
 
 class mainPage extends StatefulWidget {
   mainPage({Key? key}) : super(key: key);
@@ -16,7 +17,7 @@ class mainPage extends StatefulWidget {
 class _mainPageState extends State<mainPage> {
   String qrCode = 'unkhown';
   int currentIndex = 0;
-  final screens = [mainScreen(), qrScannerScreen(), profielScreen()];
+  final screens = [mainScreen(), qrScannerScreen(), ProfileScreen()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
