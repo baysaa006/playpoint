@@ -33,7 +33,7 @@ class ProfileListItem extends StatelessWidget {
             style: const TextStyle(
                 letterSpacing: 0.8,
                 fontSize: 16.5,
-                fontFamily: 'Poppins',
+                fontFamily: 'Roboto',
                 color: Colors.black,
                 fontWeight: FontWeight.w400),
           ),
@@ -42,7 +42,7 @@ class ProfileListItem extends StatelessWidget {
             this.medeelel,
             style: TextStyle(
               color: mPrimaryTextColor,
-              fontFamily: 'Poppins',
+              fontFamily: 'Roboto',
             ),
           ),
           if (this.hasNavigation)

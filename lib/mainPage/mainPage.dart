@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:playpoint/constant.dart';
 import 'package:playpoint/mainPage/screen/mainScreen.dart';
-import 'package:playpoint/mainPage/screen/profileScreen.dart';
 import 'package:playpoint/mainPage/screen/qrScannerScreen.dart';
 import 'package:playpoint/mainPage/screen/screen.dart';
 

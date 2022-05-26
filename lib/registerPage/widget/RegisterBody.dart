@@ -21,27 +21,23 @@ class _registerBodyState extends State<registerBody> {
   @override
   Widget build(BuildContext context) {
     return Column(children: [
-      Row(
+      Flex(
+        direction: Axis.horizontal,
         children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 1),
-            child: Expanded(
-              child: MaterialButton(
-                onPressed: () => Navigator.of(context).pop(),
-                child: const Icon(
-                  Icons.arrow_back,
-                ),
+          Flexible(
+            child: MaterialButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: const Icon(
+                Icons.arrow_back,
               ),
             ),
           ),
-          const Expanded(
-            child: Text(
-              'Бүртгүүлэх',
-              style: TextStyle(
-                fontFamily: 'Roboto',
-                fontSize: 28,
-                fontStyle: FontStyle.normal,
-              ),
+          const Text(
+            'Бүртгүүлэх',
+            style: TextStyle(
+              fontFamily: 'Roboto',
+              fontSize: 28,
+              fontStyle: FontStyle.normal,
             ),
           )
         ],
@@ -60,9 +56,10 @@ class _registerBodyState extends State<registerBody> {
       const SizedBox(
         height: 10,
       ),
-      Row(
+      Flex(
+        direction: Axis.horizontal,
         children: <Widget>[
-          Expanded(
+          Flexible(
             child: TextField(
                 decoration: InputDecoration(
               labelText: 'Нэр',
@@ -84,7 +81,7 @@ class _registerBodyState extends State<registerBody> {
           const SizedBox(
             width: 10,
           ),
-          Expanded(
+          Flexible(
             child: TextField(
                 decoration: InputDecoration(
               labelText: 'Овог',
@@ -129,9 +126,10 @@ class _registerBodyState extends State<registerBody> {
       const SizedBox(
         height: 10,
       ),
-      Row(
+      Flex(
+        direction: Axis.horizontal,
         children: <Widget>[
-          Expanded(
+          Flexible(
             child: TextField(
                 keyboardType: TextInputType.number,
                 decoration: InputDecoration(
@@ -154,7 +152,7 @@ class _registerBodyState extends State<registerBody> {
           const SizedBox(
             width: 10,
           ),
-          Expanded(
+          Flexible(
             child: TextField(
                 decoration: InputDecoration(
               labelText: 'Хүйс',

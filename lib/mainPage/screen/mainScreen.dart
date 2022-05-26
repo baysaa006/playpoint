@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:playpoint/constant.dart';
+import 'package:playpoint/mainPage/news.dart';
 
 class mainScreen extends StatefulWidget {
   mainScreen({Key? key}) : super(key: key);
@@ -11,8 +12,7 @@ class mainScreen extends StatefulWidget {
 class _mainScreenState extends State<mainScreen> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-        child: Padding(
+    return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
       child: ListView(children: [
         Container(
@@ -34,7 +34,7 @@ class _mainScreenState extends State<mainScreen> {
                 Column(
                   children: const [
                     Text(
-                      '130p',
+                      '0p',
                       style: TextStyle(
                           color: Colors.white,
                           fontFamily: 'Roboto',
@@ -67,8 +67,9 @@ class _mainScreenState extends State<mainScreen> {
               ],
             ),
           ),
-        )
+        ),
+        news(),
       ]),
-    ));
+    );
   }
 }
